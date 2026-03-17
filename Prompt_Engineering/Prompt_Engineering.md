@@ -26,7 +26,7 @@ Provide clear instructions regarding the output format of the LLM response. This
     Example:
     	Provide test cases in a table with below provided columns
     o	Test Case ID,
-    o	 Test Steps, 
+    o	Test Steps, 
     o	Description about Test Cases, 
     o	Expected Results
 
@@ -34,18 +34,21 @@ Provide clear instructions regarding the output format of the LLM response. This
 Types of Prompting:
 
 Single Shot Prompting:
- 
+
 Providing instructions to models without any example to generate response
 
     Example1: Design test case for Banking Fraud Detection login page.
 
     Example 2: 
-    Context: Behave like a Quality Analyst working on Banking Fraud Detection Application Instructions: Design test cases for valid login, invalid login and forget password
+    Context: Behave like a Quality Analyst working on Banking Fraud Detection Application 
+    
+    Instructions: Design test cases for valid login, invalid login and forget password
+    
     Constraints: Include negative scenarios and browser compatibility (Edge and Chrome)
+    
     Output: Provide test cases in a table with columns – Test Case ID, Description, Test Steps and Expected Results
 
 Note: Both examples are single-shot prompts, but Example 2 is more optimized. It provides clear context and instructions for better responses, while Example 1 can cause the model to hallucinate and waste tokens and time.
-Tokens:
 
 Few Shot Prompting: 
 
