@@ -6,6 +6,8 @@ LLMs are defined has probability machines and they work by predecting the next t
 Model Examples:
 
     OpenAI: Company that creates ChatGPT and other language models
+    Google Brand: Gemini,Meta Llama 
+    Anthropic : Claude
 
 
 Tokenizer: Process of spliting text into smaller chunks or tokens and assigning each one number
