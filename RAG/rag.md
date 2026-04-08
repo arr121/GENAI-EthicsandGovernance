@@ -13,6 +13,17 @@ Vector Data Base: A search engine or data base that stores vectorized documents,
 Embedding : Representation of text data as vector in dimenstional space allowing similarity comparsion between different piece of text
 
 
+![alt text](image.png)
+
+Usually Query should navigate from User --> Framework --> LLM --> Response to User Query
+
+RAG Works : 
+- Steps 
+    - 1 User Query - The process begins by sending a user query to application ( Whats the Weather ) 
+    - 2 Application - Application receives query and initiate the workflow
+    - 3 Vector DB (Stores more accurate information) - Query is passed to vector data base , which  stores and retrieves more accurate information relevant to user request
+    - 4 LLM ( User Query + Context + Response from Vector Data Base) - LLM process the user query , incorporating the context and information received from Vector Data Base  and generate respone
+    - 5 Application - Generated response is sent back through application to user
 
 
 
