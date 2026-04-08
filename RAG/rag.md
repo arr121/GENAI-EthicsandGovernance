@@ -62,7 +62,29 @@ Types of Retrieval:
 - Keyword Search : Uses exact term in the user input and search an index for documents that matching  text. Matching is done based on the text only and vectors not involved
 
     example: Searching User-ID, Product code, Address
-- Vector Search:   
+    
+
+- Vector Search (Dense Retrieval): It can retrieve or find matches when no search terms are presented in documents. It supports unstructured text rather than precised text 
+
+![alt text](image-1.png)
+    
+    Embedding Model : Translate input text and each of document into corresponding embedding
+
+    Embedding : Its a vector of floating numbers that roughly captures the general idea of text it encodes
+    if two pieces of text are related, corresponding embedding vectors are similar
+    E.g: 
+    a = Do you have some recommendation for specific apartment close to sea
+    b= "3 rooms house with ocean view"
+    c= "I want donut"
+
+    Types of Embedding Method: 
+    - Dot Product :
+    - Cosine Method : 
+    - Euclidean Distance
+
+- Hybrid Search: (Keyword Search) + (Dense Search) 
+
+Semantic Ranking : Retrieval step does its best ranking to the returned documents based on how relevent they are to the user query
 
 Cloud Based GEN AI Application: 
 
